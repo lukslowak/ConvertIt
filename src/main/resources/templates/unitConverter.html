@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="row">
+
+
+<script type="text/javascript">
+
+function licz(aform){
+aform.score1.value = parseFloat(aform.ilosc.value) * parseFloat(100);
+aform.score2.value = parseFloat(aform.ilosc.value) * parseFloat(1000);
+aform.score3.value = parseFloat(aform.ilosc.value) * parseFloat(0.006);
+
+}
+
+</script>
+<h3>Długość</h3>
+<form action="strona.html" name="xxxA">
+    <INPUT TYPE="text" NAME="ilosc" placeholder="Centrymetrów" onChange=" licz(xxxA);">
+    <INPUT TYPE="text" NAME="score1" placeholder="Metrów">
+    <INPUT TYPE="text" NAME="score2" placeholder="Kilometrów">
+    <INPUT TYPE="text" NAME="score3" placeholder="Mil">
+</form>
+
+</div>
+
+</body>
+</html>

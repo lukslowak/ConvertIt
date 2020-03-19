@@ -13,17 +13,17 @@ aform.wartosc.value = parseFloat(aform.ilosc.value) + parseFloat(aform.cena.valu
 }
 
 function substract(aform){
-aform.wartosc2.value = parseInt(aform.ilosc2.value) - parseInt(aform.cena2.value);
+aform.wartosc2.value = parseFloat(aform.ilosc2.value) - parseFloat(aform.cena2.value);
 }
 
 
 
 function multiply(aform){
-aform.wartosc3.value = parseInt(aform.ilosc3.value) * parseInt(aform.cena3.value);
+aform.wartosc3.value = parseFloat(aform.ilosc3.value) * parseFloat(aform.cena3.value);
 }
 
 function division(aform){
-aform.wartosc4.value = parseInt(aform.ilosc4.value) / parseInt(aform.cena4.value);
+aform.num1.value = parseFloat(aform.ilosc4.value) / parseFloat(aform.cena4.value);
 
 }
 
@@ -53,7 +53,7 @@ aform.wartosc4.value = parseInt(aform.ilosc4.value) / parseInt(aform.cena4.value
 <form action="strona.html" name="xxx4">
     <INPUT TYPE="text" NAME="ilosc4" placeholder="Liczba1" onChange=" division(xxx4);">
     <INPUT TYPE="text" NAME="cena4" placeholder="Liczba2" onChange=" division(xxx4);">
-    <INPUT TYPE="text" NAME="wartosc4" placeholder="Wynik">
+    <INPUT TYPE="text" NAME="num1" placeholder="Wynik">
 </form>
 </body>
 </html>

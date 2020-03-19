@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>tripCost</h1>
+
+<script type="text/javascript">
+
+function calc(aform){
+aform.fuelNeeded.value = (parseFloat(aform.odleglosc.value) * parseFloat(aform.spalanie.value))*0.01;
+aform.tripPrice.value = parseFloat(aform.fuelNeeded.value) * parseFloat(aform.fuelPrice.value);
+}
+
+</script>
+<h3>Obliczenie kosztów podróży</h3>
+<form action="strona.html" name="xxxA">
+    <h5>odleglość w km</h5>
+    <INPUT TYPE="text" NAME="odleglosc" placeholder="odległość w kilometrach"  onChange=" calc(xxxA);">
+    <h5>spalanie</h5>
+    <INPUT TYPE="text" NAME="spalanie" placeholder="spalanie w litrach" onChange=" calc(xxxA);">
+    <h5>Cena 1 litra paliwa</h5>
+    <INPUT TYPE="text" NAME="fuelPrice" placeholder="Cena paliwa w złotych" onChange=" calc(xxxA);">
+    <h5>Wymagana ilość paliwa w litrach</h5>
+    <INPUT TYPE="text" NAME="fuelNeeded" placeholder="Wymagana ilość paliwa w litrach">
+    <h5>Koszt podróży w złotych</h5>
+    <INPUT TYPE="text" NAME="tripPrice" placeholder="Koszt podróży w złotych">
+
+</form>
+
+</body>
+</html>

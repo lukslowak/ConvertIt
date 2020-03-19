@@ -16,4 +16,14 @@ public class HomeController {
         return "mathOperations";
     }
 
+    @GetMapping("/unitConverter")
+    public String unitConverter(){
+        return "unitConverter";
+    }
+
+    @GetMapping("/tripCost")
+    public String tripCost(){
+        return "tripCost";
+    }
+
 }
