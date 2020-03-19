@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ConvertIt</title>
+</head>
+<body>
+<h2> Operacje matematyczne</h2>
+<script type="text/javascript">
+
+function licz(aform){
+aform.wartosc.value = parseFloat(aform.ilosc.value) + parseFloat(aform.cena.value);
+}
+
+function substract(aform){
+aform.wartosc2.value = parseInt(aform.ilosc2.value) - parseInt(aform.cena2.value);
+}
+
+
+
+function multiply(aform){
+aform.wartosc3.value = parseInt(aform.ilosc3.value) * parseInt(aform.cena3.value);
+}
+
+function division(aform){
+aform.wartosc4.value = parseInt(aform.ilosc4.value) / parseInt(aform.cena4.value);
+
+}
+
+
+</script>
+<h3>Dodawanie</h3>
+<form action="strona.html" name="xxx">
+    <INPUT TYPE="text" NAME="ilosc" placeholder="Liczba1" onChange=" licz(xxx);">
+    <INPUT TYPE="text" NAME="cena" placeholder="Liczba2" onChange=" licz(xxx);">
+    <INPUT TYPE="text" NAME="wartosc" placeholder="Wynik">
+</form>
+
+<h3>Odejmowanie</h3>
+<form action="strona.html" name="xxx2">
+    <INPUT TYPE="text" NAME="ilosc2" placeholder="Liczba1" onChange=" substract(xxx2);">
+    <INPUT TYPE="text" NAME="cena2" placeholder="Liczba2" onChange=" substract(xxx2);">
+    <INPUT TYPE="text" NAME="wartosc2" placeholder="Wynik">
+</form>
+
+<h3>Mnożenie</h3>
+<form action="strona.html" name="xxx3">
+    <INPUT TYPE="text" NAME="ilosc3" placeholder="Liczba1" onChange=" multiply(xxx3);">
+    <INPUT TYPE="text" NAME="cena3" placeholder="Liczba2" onChange=" multiply(xxx3);">
+    <INPUT TYPE="text" NAME="wartosc3" placeholder="Wynik">
+</form>
+<h3>Dzielenie</h3>
+<form action="strona.html" name="xxx4">
+    <INPUT TYPE="text" NAME="ilosc4" placeholder="Liczba1" onChange=" division(xxx4);">
+    <INPUT TYPE="text" NAME="cena4" placeholder="Liczba2" onChange=" division(xxx4);">
+    <INPUT TYPE="text" NAME="wartosc4" placeholder="Wynik">
+</form>
+</body>
+</html>

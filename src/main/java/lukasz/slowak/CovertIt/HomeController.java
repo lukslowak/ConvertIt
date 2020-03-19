@@ -11,4 +11,9 @@ public class HomeController {
         return "home";
     }
 
+    @GetMapping("/mathOperations")
+    public String mathOperations(){
+        return "mathOperations";
+    }
+
 }
